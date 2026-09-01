@@ -1,6 +1,6 @@
 --%CSTD===========================================================*
-     --* Application. : SURPIE     Surplus Inventory                  *
-     --* Component. . : SURINVM                       Type: TABLE     *
+     --* Application. : SURPIE     Surplus Inventory                   *
+     --* Component. . : SURINVM                       Type: TABLE      *
      --*===============================================================*
      --* Sub-system . :                                                *
      --* Function . . :                                                *
@@ -12,8 +12,8 @@
      --*                                                               *
      --*%E=============================================================*
      --* AUTHOR:    EWART      01/09/2026 00:00  26.09.01              *
-     --* MODIFS: ** EWART      01/09/2026 00:00  26.09.01 MR 01/  01   *
-     --*           Surplus Inventory Customer table                   *
+     --* MODIFS: ** EWART      01/09/2026 00:00  26.09.01 MR 01/   01  *
+     --*            Surplus Inventory Customer table                   *
      --%ECSTD==========================================================*
     CREATE TABLE SURINVM (
      SUR_STS      CHAR(1)        NOT NULL,      -- Status: A=Active, D=Deactivated
