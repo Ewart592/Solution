@@ -1,6 +1,6 @@
 --%CSTD===========================================================*
      --* Application. : SURPIE     Surplus Inventory                  *
-     --* Component. . : SURPIECUSM                    Type: TABLE     *
+     --* Component. . : SURINVM                       Type: TABLE     *
      --*===============================================================*
      --* Sub-system . :                                                *
      --* Function . . :                                                *
@@ -11,11 +11,11 @@
      --*                                                               *
      --*                                                               *
      --*%E=============================================================*
-     --* AUTHOR:    EMCRAE     01/09/2026 00:00  26.09.01              *
-     --* MODIFS: ** EMCRAE     01/09/2026 00:00  26.09.01 MR 01/  01   *
+     --* AUTHOR:    EWART      01/09/2026 00:00  26.09.01              *
+     --* MODIFS: ** EWART      01/09/2026 00:00  26.09.01 MR 01/  01   *
      --*           Surplus Inventory Customer table                   *
      --%ECSTD==========================================================*
-    CREATE TABLE SURPIECUSM (
+    CREATE TABLE SURINVM (
      SUR_STS      CHAR(1)        NOT NULL,      -- Status: A=Active, D=Deactivated
     SUR_ID       NUMERIC(6,0)   NOT NULL,      -- Primary key, unique record identifier
     SUR_NAME     VARCHAR(50)    NOT NULL,      -- Customer's name
@@ -36,4 +36,4 @@
     CONSTRAINT CHK_SURTYPE CHECK (SUR_TYPE IN ('I', 'E'))
 );
 
-LABEL ON TABLE SURPIECUSM IS 'Surplus Inventory Customer Table';
+LABEL ON TABLE SURINVM IS 'Surplus Inventory Customer Table';
